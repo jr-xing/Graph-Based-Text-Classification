@@ -1,8 +1,9 @@
 # Graph-Based-Text-Classification
 ## Introduction
 This projcet aims to do text classification using graph-based text representation and graph kernel. The theory is based on:
-> Marion Neumann, Roman Garnett, Christian Bauckhage, Kristian Kersting. Propagation kernels: efficient graph kernels from propagated information. (2015). Machine Learning. 102 (2), pp. 209-245.
+> Marion Neumann, Roman Garnett, Christian Bauckhage, Kristian Kersting. Propagation kernels: efficient graph kernels from propagated information. (2015). Machine Learning. 102 (2), pp. 209-245.  
 > Neumann, M. Patricia, N., Garnett, R., and Kersting, K. Efficient Graph Kernels by Randomization. (2013). Machine Learning and Knowledge Discovery in Databases: European Conference (ECML/PKDD 2012), pp. 378--392.
+
 Ths code is based on:
 [Propagation Kernels](https://github.com/marionmari/propagation_kernels) by Marion Neumann and [Graph Representation and Classification of Documents](github.com/sunyumark/masterProject) by Yu Sun
 
