@@ -185,19 +185,15 @@ class textGraph(textRepresentations):
         print('An unique ID will be assigned to each node label. The dictionary will be exported as a text file in the database folder.\nNode_label Dictionary:')
         for key in node_labelToID.keys():
             l_id = node_labelToID[key]
-            print('\t' + str(key) + ': ' + str(l_id))
-        
+            print('\t' + str(key) + ': ' + str(l_id))        
 
         #-- node_label files --#
         #       key->   label
         # e.g. 'one' -> 0(Unknown)
-        # ds_node_labels = open(ds_node_labels_path,'w')
         for key in IDToTag.keys():
             label = IDToTag[key]
-            # ds_node_labels.write(str(label)+'\n')
             self.graph_nodes['labels'].append(label)
             
-        # ds_node_labels.close()
 
     # output DS_node_attributes.txt
     def __getNodesAttributes(self, nd_attr_type, vec_dim, vec_win_size, vec_model):
@@ -227,9 +223,9 @@ class textGraph(textRepresentations):
 
         #-- node attributes files --#
         print('Use {} model to compute each word a unique embedding.'.format(nd_attr_type))
+        import numpy as np
         for key in IDToTag.keys():
-            attr = IDToTag[key]
-            import numpy as np
+            attr = IDToTag[key]            
             attrlist = [np.float64(a) for a in attr.split(',')]
             self.graph_nodes['attributes'].append(attrlist)
     
